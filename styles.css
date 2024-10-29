@@ -1,0 +1,138 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #222;
+  padding: 0 50px;
+}
+
+.wrapper {
+  height: 100vh;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  perspective: 1000px;
+}
+
+.card-content {
+  width: 100%;
+  padding-top: 100px;
+  transform-style: preserve-3d;
+  background: url("https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: center center;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.card-content:hover {
+  background-position: 80% 20%;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.card-txt {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  box-shadow: 0 20px 50px -25px rgba(0, 115, 255, 0.9);
+  border-radius: 0 0 10px 10px;
+  padding: 50px 25px 25px 25px;
+  transform-style: preserve-3d;
+}
+
+.card-title {
+  font-size: 25px;
+  font-weight: 700;
+  transform: translate3d(0, 0, 20px);
+  transition: 0.5s ease-in-out;
+}
+
+.card-title:hover {
+  transform: translate3d(0, 0, 50px);
+}
+
+.card-desc {
+  padding: 5px 0;
+  font-size: 13px;
+  color: #999;
+  transform: translate3d(0, 0, 20px);
+  transition: 0.5s ease-in-out;
+}
+
+.card-desc:hover {
+  transform: translate3d(0, 0, 50px);
+}
+
+.more {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 115, 255, 1);
+  padding-top: 10px;
+  transform: translate3d(0, 0, 20px);
+  transition: 0.5s ease-in-out;
+}
+
+.more:hover {
+  transform: translate3d(0, 0, 50px);
+}
+
+.card-cal {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 75px;
+  left: 25px;
+  background: #222;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 20px 60px 0 rgba(0, 115, 255, 1),
+    0 18px 36px -18px rgba(0, 115, 255, 1);
+  transform: translate3d(0, 0, 50px);
+}
+
+.card-cal span {
+  display: block;
+  text-align: center;
+}
+
+.card-cal .month {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.card-cal .date {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(0, 115, 255, 1);
+}
+
+.card2 {
+  filter: hue-rotate(150deg);
+}
+
+.card3 {
+  filter: hue-rotate(300deg);
+}
+
+.card4 {
+  filter: hue-rotate(90deg);
+}
